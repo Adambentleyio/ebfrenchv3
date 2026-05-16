@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================== */
+/*  BASE LAYER                    */
+/* ============================== */
+
+@layer base {
+  ::selection {
+    background: #0C0C18;
+    color: #fff;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 2px solid #A7636D;
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: #FFFFFF;
+    color: #283338;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Cabinet Grotesk', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.15);
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      animation-delay: 0s !important;
+    }
+  }
+}
+
+/* ============================== */
+/*  COMPONENTS LAYER              */
+/* ============================== */
+
+@layer components {
+
+  /* --- Gradient Mesh Background --- */
+  .mesh-bg {
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 40%, rgba(167,99,109,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 85% 80%, rgba(12,12,24,0.04) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 70% at 50% 0%, rgba(26,26,46,0.03) 0%, transparent 50%);
+  }
+
+  /* --- Glass Navigation --- */
+  .glass-nav {
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.04);
+  }
+
+  /* Nav scroll-hide: slides up and out of view */
+  nav {
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .nav-hidden {
+    transform: translateY(-130%);
+  }
+
+  /* --- Primary Button --- */
+  .btn-primary {
+    background: #0C0C18;
+    color: #FFFFFF;
+    padding: 14px 36px;
+    border-radius: 4.5px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 7px 7px 0px 0px rgba(4,18,31,0.12);
+    display: inline-block;
+    text-decoration: none;
+  }
+  .btn-primary:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 0px 0px rgba(4,18,31,0.18);
+    background: #1A1A2E;
+  }
+
+  /* --- Secondary Button --- */
+  .btn-secondary {
+    background: transparent;
+    color: #283338;
+    padding: 14px 36px;
+    border-radius: 4.5px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1.5px solid rgba(40,51,56,0.2);
+    display: inline-block;
+    text-decoration: none;
+  }
+  .btn-secondary:hover {
+    border-color: #A7636D;
+    background: rgba(167,99,109,0.06);
+    transform: translateY(-1px);
+  }
+
+  /* --- Horizontal Accordion --- */
+  .accordion-panel {
+    transition: flex 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  .accordion-panel .panel-content {
+    opacity: 0;
+    transition: opacity 0.5s ease 0.25s;
+  }
+  .accordion-panel.active .panel-content {
+    opacity: 1;
+  }
+  .accordion-panel:not(.active) .panel-label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+
+  /* --- Marquee --- */
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  /* --- Testimonial Carousel --- */
+  .testimonial-track {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* --- Video Play Button Hover --- */
+  .play-btn-ring {
+    transition: all 0.4s ease;
+  }
+  .video-thumb:hover .play-btn-ring {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  /* --- CSS Keyframe Fade-In (hero fallback / noscript) --- */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeInUp 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+  .animate-delay-1 { animation-delay: 0.12s; }
+  .animate-delay-2 { animation-delay: 0.28s; }
+  .animate-delay-3 { animation-delay: 0.82s; }
+  .animate-delay-4 { animation-delay: 0.98s; }
+}
+
+/* ============================== */
+/*  RESPONSIVE OVERRIDES          */
+/* ============================== */
+
+@layer utilities {
+  @media (max-width: 768px) {
+    .accordion-panel:not(.active) .panel-label {
+      writing-mode: horizontal-tb;
+      transform: none;
+    }
+  }
+}

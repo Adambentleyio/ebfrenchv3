@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ebfrenchtutoring.co.uk/sitemap.xml

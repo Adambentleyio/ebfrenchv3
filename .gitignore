@@ -1,0 +1,19 @@
+# Agent / tool config
+.agents/
+.impeccable/
+.vscode/
+skills-lock.json
+
+# Duplicate brand assets directory
+brand assets/
+
+# Reference / metadata files in assets
+assets/brand.json
+assets/content.md
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
