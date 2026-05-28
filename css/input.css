@@ -163,6 +163,15 @@
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
+  /* --- Play Icon Pulse --- */
+  @keyframes playPulse {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.15); opacity: 1; }
+  }
+  .play-icon-pulse {
+    animation: playPulse 2.2s ease-in-out infinite;
+  }
+
   /* --- Video Play Button Hover --- */
   .play-btn-ring {
     transition: all 0.4s ease;

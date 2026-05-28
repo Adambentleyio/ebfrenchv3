@@ -122,12 +122,18 @@
                  width="450" height="563" loading="eager">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/25 via-transparent to-transparent transition-all duration-700 group-hover:from-brand-primary/45"></div>
           </div>
-          <div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full overflow-hidden shadow-xl -rotate-6 hidden lg:block"
+          <div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full overflow-hidden shadow-xl -rotate-6 hidden lg:block cursor-pointer group"
                data-hero-floating
-               style="background-image: url('assets/ebfrenchv2_logo.jpg'); background-size: cover; background-position: center; filter: brightness(1.05) contrast(1.1); opacity: 0;"></div>
+               data-play-btn
+               style="background-image: url('assets/ebfrench_headshot_test_1.png'); background-size: cover; background-position: center; filter: brightness(1.05) contrast(1.1); opacity: 0;">
+               <div class="absolute inset-0 bg-black/30 group-hover:bg-black/45 transition-colors duration-300"></div>
+               <div class="absolute inset-0 flex items-center justify-center">
+                 <svg class="play-icon-pulse drop-shadow-md transition-transform duration-300 group-hover:scale-110" width="28" height="28" viewBox="0 0 14 16" fill="white"><path d="M0 0v16l14-8z"/></svg>
+               </div>
+          </div>
           <div class="absolute -top-8 -right-8 w-20 h-20 rounded-full overflow-hidden shadow-lg border-[3px] border-brand-accent/40 hidden lg:block bg-cover bg-center"
                data-hero-floating
-               style="background-image: url('assets/ebfrench_headshot_test_1.png'); opacity: 0;"></div>
+               style="background-image: url('assets/ebfrenchv2_logo.jpg'); opacity: 0;"></div>
         </div>
       </div>
     </div>
@@ -171,11 +177,11 @@
 
     <div class="flex flex-wrap justify-center items-center gap-x-14 gap-y-8 md:gap-x-20 md:gap-y-12"
          data-gsap-logo-strip>
-      <img src="assets/logos/EllesmereCollege.png" alt="Ellesmere College" loading="lazy"
-           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+      <img src="assets/logos/St-Annes_logo.png" alt="St Anne's" loading="lazy"
+          class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
-      <img src="assets/logos/St-Annes_logo.png" alt="St Anne's" loading="lazy"
+      <img src="assets/logos/EllesmereCollege.png" alt="Ellesmere College" loading="lazy"
            class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
@@ -183,15 +189,11 @@
            class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
-      <img src="assets/logos/malbank.png" alt="Malbank School" loading="lazy"
-           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
-                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
-                  transition-all duration-500 ease-out">
+      <img src="assets/logos/acton.png" alt="Acton" loading="lazy"
+          class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+          grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+          transition-all duration-500 ease-out">
       <img src="assets/logos/reaseheath-logo-web-header-1.png" alt="Reaseheath College" loading="lazy"
-           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
-                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
-                  transition-all duration-500 ease-out">
-      <img src="assets/logos/sandbach-2.png.png" alt="Sandbach School" loading="lazy"
            class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
@@ -204,10 +206,6 @@
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
       <img src="assets/logos/citi.png" alt="Citi" loading="lazy"
-           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
-                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
-                  transition-all duration-500 ease-out">
-      <img src="assets/logos/acton.png" alt="Acton" loading="lazy"
            class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
                   grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                   transition-all duration-500 ease-out">
@@ -316,7 +314,7 @@
   </div>
 </section>
 
-<!-- ==================== LES RECOMMENDATIONS — Testimonial Carousel ==================== -->
+<!-- ==================== LES RECOMMENDATIONS — Video Testimonials Bento ==================== -->
 <section id="testimonials" class="relative py-32 md:py-48 bg-brand-surface/40">
   <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
     <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full opacity-[0.07]"
@@ -335,118 +333,69 @@
         What some wonderful people are saying about their French learning journey.
       </p>
     </div>
-    <div class="relative">
-      <div class="overflow-hidden rounded-2xl" id="testimonial-viewport">
-        <div class="testimonial-track flex" id="testimonial-track">
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Michael D</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma is a superb French teacher. I couldn't recommend her enough. She really cares about each and every one of our sessions.&rdquo;</p>
-            </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 [grid-auto-flow:dense]">
+
+      <div class="md:col-span-5 md:row-span-2 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer flex flex-col min-h-[400px]"
+           data-gsap-card
+           data-play-btn
+           data-video-id="846210210">
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/70 to-brand-primary/20 z-[1]"></div>
+        <div class="absolute -bottom-12 -right-12 w-56 h-56 rounded-full opacity-20 pointer-events-none"
+             style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
+        <div class="absolute inset-0 flex items-center justify-center z-10">
+          <div class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/20 group-hover:scale-105 transition-all duration-500 ease-out">
+            <svg class="ml-2 transition-transform duration-500 ease-out group-hover:scale-110" width="30" height="34" viewBox="0 0 14 16" fill="white" aria-hidden="true"><path d="M0 0v16l14-8z"/></svg>
           </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Roger B</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;I have learned more from Emma in 12 weeks than in the 12 years since I retired! I would thoroughly recommend Emma as a tutor.&rdquo;</p>
-            </div>
+        </div>
+        <div class="relative z-10 mt-auto p-8 md:p-10">
+          <p class="font-body text-brand-accent/80 text-xs font-semibold tracking-[0.2em] uppercase mb-3">Featured Review</p>
+          <h3 class="font-display font-bold text-white text-2xl tracking-[-0.02em] mb-2">Michael D</h3>
+          <p class="font-body text-white/60 text-sm leading-relaxed max-w-xs">
+            &ldquo;Emma is a superb French teacher. I couldn't recommend her enough. She really cares about each and every one of our sessions.&rdquo;
+          </p>
+        </div>
+      </div>
+
+      <div class="md:col-span-7 relative overflow-hidden rounded-2xl bg-brand-secondary group cursor-pointer flex flex-col min-h-[200px]"
+           data-gsap-card
+           data-play-btn
+           data-video-id="846210210">
+        <div class="absolute top-0 right-0 w-36 h-36 rounded-full opacity-[0.08] -translate-y-1/3 translate-x-1/3 pointer-events-none"
+             style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
+        <div class="flex items-center gap-5 p-8 h-full">
+          <div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 group-hover:scale-105 transition-all duration-500 ease-out">
+            <svg class="ml-0.5 transition-transform duration-500 ease-out group-hover:scale-110" width="18" height="20" viewBox="0 0 14 16" fill="white" aria-hidden="true"><path d="M0 0v16l14-8z"/></svg>
           </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Year 4 Pupil</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;My tutor is kind and helpful. My lessons are fun and interesting and I look forward to them every week.&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Year 9 Pupil</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma has really helped me prepare for my International exchange. She always starts the lesson with a cheery Salut!&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Patrick M</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;I would recommend Emma to anyone, regardless of level or requirements. She put my school French on firmer footing.&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Julie S</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma was an excellent tutor, supportive, encouraging and friendly. The sessions were tailored to my needs.&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Niall S</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Contacting Emma was a pivotal point in my language learning journey. I feel more confident and am really enjoying the process.&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Leanne M</p>
-                  <p class="font-body text-brand-muted text-xs">Parent of GCSE student</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Excellent tutor! My daughter is enjoying her lessons and thriving. Highly recommended.&rdquo;</p>
-            </div>
-          </div>
-          <div class="min-w-full md:min-w-[33.333%] p-4">
-            <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
-              <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0" style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: grayscale(1);"></div>
-                <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Samuel B</p>
-                  <p class="font-body text-brand-muted text-xs">University Student</p>
-                </div>
-              </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma has the unique gift to bring the best out of her students. I would 100% recommend to anyone seeking a French tutor.&rdquo;</p>
-            </div>
+          <div>
+            <h3 class="font-display font-bold text-white text-xl tracking-[-0.02em] mb-1">Niall S</h3>
+            <p class="font-body text-white/55 text-sm leading-relaxed">
+              &ldquo;Contacting Emma was a pivotal point in my language learning journey. I feel more confident and am really enjoying the process.&rdquo;
+            </p>
           </div>
         </div>
       </div>
-      <button id="testimonial-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-12 h-12 rounded-full bg-white shadow-lg border border-black/[0.06] flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all duration-300 z-10" aria-label="Previous testimonial">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-      </button>
-      <button id="testimonial-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-12 h-12 rounded-full bg-white shadow-lg border border-black/[0.06] flex items-center justify-center hover:bg-brand-primary hover:text-white transition-all duration-300 z-10" aria-label="Next testimonial">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </button>
+
+      <div class="md:col-span-7 relative overflow-hidden rounded-2xl bg-white border border-black/[0.04] group cursor-pointer flex flex-col min-h-[200px]"
+           data-gsap-card
+           data-play-btn
+           data-video-id="846210210">
+        <div class="absolute top-0 right-0 w-36 h-36 rounded-full opacity-[0.04] -translate-y-1/3 translate-x-1/3 pointer-events-none"
+             style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
+        <div class="flex items-center gap-5 p-8 h-full">
+          <div class="w-14 h-14 rounded-full bg-brand-accent/8 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-accent/15 group-hover:scale-105 transition-all duration-500 ease-out">
+            <svg class="ml-0.5 transition-transform duration-500 ease-out group-hover:scale-110" width="18" height="20" viewBox="0 0 14 16" fill="#A7636D" aria-hidden="true"><path d="M0 0v16l14-8z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display font-bold text-brand-primary text-xl tracking-[-0.02em] mb-1">Samuel B</h3>
+            <p class="font-body text-brand-muted text-xs uppercase tracking-wider mb-0.5">University Student</p>
+            <p class="font-body text-brand-text/60 text-sm leading-relaxed">
+              &ldquo;Emma has the unique gift to bring the best out of her students. I would 100% recommend to anyone seeking a French tutor.&rdquo;
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -463,7 +412,7 @@
             L'amiti&eacute;
           </h2>
           <p class="font-body text-brand-text/60 text-lg max-w-sm mb-8 leading-relaxed">
-            Located in the heart of Nantwich, our conversational French classes and monthly Meetup group bring language learners together.
+            Located in the heart of Nantwich, our conversational French classes and tutoring sessions bring language learners together.
           </p>
           <div class="hidden lg:block w-16 h-px bg-brand-accent/40 mb-6"></div>
           <span class="font-body text-brand-muted text-xs tracking-[0.2em] uppercase hidden lg:block">Scroll to explore</span>
@@ -472,9 +421,25 @@
       <!-- Right: Scrolling Gallery -->
       <div class="lg:w-[58%] flex flex-col gap-12" id="pinned-right">
         <!-- Card 1 -->
+         
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04]">
           <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/10] group">
-            <img src="assets/community_classroom.jpg"
+            <img src="assets/ebfrenchv2_logo.jpg"
+                 alt="French Meetup"
+                 class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                 style="filter: contrast(1.1) saturate(0.8);"
+                 width="640" height="400" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent"></div>
+          </div>
+          <!-- Card 2 -->
+          <h3 class="font-display font-bold text-brand-primary text-xl mb-3 tracking-[-0.01em]">Tutoring</h3>
+          <p class="font-body text-brand-text/60 leading-relaxed">
+            An immersive and personalized experience, tailored to all ages. Our individualized tutoring sessions are designed to cater to your unique needs and learning style, ensuring that you reach your language goals in the most efficient way possible.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04]">
+          <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/10] group">
+            <img src="assets/eb-french-social.jpg"
                  alt="Nantwich"
                  class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                  style="filter: contrast(1.1) saturate(0.85);"
@@ -486,21 +451,7 @@
             Immerse yourself in French culture, enhance your fluency, and gain confidence to express yourself in this beautiful language. Our small-group sessions create a supportive environment for real conversation practice.
           </p>
         </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04]">
-          <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/10] group">
-            <img src="assets/community_meetup.jpg"
-                 alt="French Meetup"
-                 class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                 style="filter: contrast(1.1) saturate(0.8);"
-                 width="640" height="400" loading="lazy" decoding="async">
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent"></div>
-          </div>
-          <h3 class="font-display font-bold text-brand-primary text-xl mb-3 tracking-[-0.01em]">Monthly French Meetup</h3>
-          <p class="font-body text-brand-text/60 text-sm leading-relaxed">
-            Join learners and fluent speakers alike for a fun, relaxed evening of conversation and cultural exchange. We gather monthly to share our passion for French and make genuine connections.
-          </p>
-        </div>
+        
         <!-- Card 3 -->
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04]">
           <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/10] group">

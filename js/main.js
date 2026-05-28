@@ -95,14 +95,17 @@ gsap.registerPlugin(ScrollTrigger);
 /* ── Video Dialog ── */
 (function initVideoDialog() {
   const dialog = document.getElementById('video-dialog');
-  const playBtn = document.querySelector('[data-play-btn]');
+  const playBtns = document.querySelectorAll('[data-play-btn]');
   const closeBtn = document.querySelector('[data-dialog-close]');
   const iframe = document.getElementById('vimeo-iframe');
-  if (!dialog || !playBtn || !iframe) return;
+  if (!dialog || !playBtns.length || !iframe) return;
 
-  playBtn.addEventListener('click', () => {
-    iframe.src = 'https://player.vimeo.com/video/846210210?autoplay=1';
-    dialog.showModal();
+  playBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const videoId = btn.dataset.videoId || '846210210';
+      iframe.src = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+      dialog.showModal();
+    });
   });
 
   closeBtn.addEventListener('click', () => {
