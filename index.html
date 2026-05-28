@@ -74,7 +74,9 @@
 </nav>
 
 <!-- ==================== HERO — Artistic Asymmetry ==================== -->
-<section id="hero" class="relative min-h-screen flex items-center pt-32 pb-20 md:py-48 overflow-hidden">
+<section id="hero" class="relative min-h-screen flex items-center pt-20 pb-20 md:py-32 overflow-hidden">
+
+
   <!-- Gold radial ambient -->
   <div class="absolute top-1/2 right-0 w-[900px] h-[900px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/4"
        style="background: radial-gradient(circle, rgba(167,99,109,0.09) 0%, rgba(167,99,109,0.02) 45%, transparent 70%);"></div>
@@ -91,16 +93,9 @@
 
         <h1 class="font-display font-bold text-brand-primary leading-[1.05] tracking-[-0.025em] max-w-5xl mb-8"
             style="font-size: clamp(2rem, 3.8vw, 4.2rem);">
-          <span data-hero-word style="font-weight: 800; opacity: 0;">EB</span>
-          <span data-hero-word style="font-weight: 800; opacity: 0;"> French</span>
-          <span data-hero-word style="font-weight: 300; opacity: 0;"> Tutoring</span>
-          <div data-hero-word style="font-weight: 400; font-size: 0.5em; letter-spacing: -0.01em; margin-top: -0.05em; margin-bottom: 0.1em; opacity: 0;">
-            where French is
-            <span class="inline-block w-12 h-6 rounded-full align-middle bg-cover bg-center ml-1.5 border-2 border-brand-accent/30 shadow-md"
-                  style="background-image: url('assets/ebfrench_headshot_test_1.png'); filter: contrast(1.1) saturate(1.3); vertical-align: middle; opacity: 0;"
-                  data-hero-inline-img></span>
-          </div>
-          <em data-hero-word style="font-weight: 800; font-style: italic; font-size: 1.35em; color: #A7636D; display: block; line-height: 1.05; letter-spacing: -0.035em; opacity: 0;">reimagined.</em>
+          <span data-hero-word style="font-weight: 800; opacity: 0;">Learn French,</span>
+          <br>
+          <span data-hero-word style="font-weight: 800; font-style: italic; color: #A7636D; opacity: 0;">Reimagined.</span>
         </h1>
 
         <p class="font-body text-brand-text/70 text-lg md:text-xl max-w-xl leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
@@ -108,7 +103,10 @@
         </p>
 
         <div class="flex flex-wrap gap-4" data-hero-cta>
-          <a href="#cta" class="btn-primary" style="opacity: 0;">Start Your Journey</a>
+          <button class="btn-primary flex flex-nowrap gap-3 items-center" style="opacity: 0;" data-play-btn>
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor"><path d="M0 0v16l14-8z"/></svg>
+            <span>Watch video</span>
+          </button>
           <a href="#services" class="btn-secondary" style="opacity: 0;">Explore Services</a>
         </div>
       </div>
@@ -117,9 +115,9 @@
       <div class="md:col-span-5 relative mt-16 md:mt-0" data-hero-image-block>
         <div class="relative -ml-8 md:-ml-16 max-w-lg ml-auto">
           <div class="relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] rotate-3 group" data-hero-image>
-            <img src="assets/ebfrench_headshot_test_1.png"
+            <img src="assets/eb-french-profile.webp"
                  alt="Emma Bolland — French tutor"
-                 class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                 class="w-full h-full object-cover object-top transition-transform duration-1000 ease-out group-hover:scale-105"
                  style="filter: contrast(1.05) saturate(0.95);"
                  width="450" height="563" loading="eager">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/25 via-transparent to-transparent transition-all duration-700 group-hover:from-brand-primary/45"></div>
@@ -134,15 +132,109 @@
       </div>
     </div>
   </div>
+
+  <!-- Section divider -->
+  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/[0.06] to-transparent"></div>
 </section>
 
 <!-- Noscript fallback: reveal hero if JS is disabled -->
 <noscript><style>
-  [data-hero-word],[data-hero-subtitle],[data-hero-cta] a,[data-hero-floating]{opacity:1!important}
+  [data-hero-word],[data-hero-subtitle],[data-hero-cta] .btn-primary,[data-hero-cta] .btn-secondary,[data-hero-floating]{opacity:1!important}
   [data-hero-image]{clip-path:none!important}
   [data-hero-rule]{width:4rem!important}
-  [data-hero-inline-img]{opacity:1!important;transform:scale(1)!important}
 </style></noscript>
+
+<!-- ==================== VIDEO DIALOG ==================== -->
+<dialog id="video-dialog" class="fixed inset-0 z-[100] w-full h-full max-w-none max-h-none p-0 m-0 bg-black/90 backdrop-blur-sm border-none rounded-none">
+  <div class="relative w-full h-full flex items-center justify-center p-6 md:p-12">
+    <button data-dialog-close class="absolute top-6 right-6 z-10 w-12 h-12 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors duration-300" aria-label="Close video">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="4" x2="16" y2="16"/><line x1="16" y1="4" x2="4" y2="16"/></svg>
+    </button>
+    <div class="w-full max-w-5xl aspect-video rounded-2xl overflow-hidden shadow-2xl">
+      <iframe id="vimeo-iframe" src="" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="EB French Tutoring Video"></iframe>
+    </div>
+  </div>
+</dialog>
+
+<!-- ==================== LOGO BANNER — Trusted Partners ==================== -->
+<section class="relative py-24 md:py-36 overflow-hidden">
+  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+       style="background: radial-gradient(circle, rgba(167,99,109,0.04) 0%, transparent 70%);"></div>
+
+  <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12 md:mb-16">
+      <div class="w-12 h-px bg-brand-accent/30 mx-auto mb-4"></div>
+      <p class="font-body text-brand-accent text-xs font-medium tracking-[0.2em] uppercase">
+        Proud to have taught students from
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center gap-x-14 gap-y-8 md:gap-x-20 md:gap-y-12"
+         data-gsap-logo-strip>
+      <img src="assets/logos/EllesmereCollege.png" alt="Ellesmere College" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/St-Annes_logo.png" alt="St Anne's" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/john-deanes.png" alt="John Deane's College" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/malbank.png" alt="Malbank School" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/reaseheath-logo-web-header-1.png" alt="Reaseheath College" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/sandbach-2.png.png" alt="Sandbach School" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/bls_logo.svg" alt="BLS" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/bowcock.svg" alt="Bowcock" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/citi.png" alt="Citi" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/acton.png" alt="Acton" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/mrs-darlingtons.png" alt="Mrs Darlington's" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/university-of-chester-logo.png" alt="University of Chester" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/cirque-du-soleil-logo.png" alt="Cirque du Soleil" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/staci-logo.png" alt="Staci" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+      <img src="assets/logos/emirates-logo.png" alt="Emirates" loading="lazy"
+           class="h-10 md:h-12 w-auto max-w-[160px] md:max-w-[200px] object-contain
+                  grayscale opacity-60 hover:grayscale-0 hover:opacity-100
+                  transition-all duration-500 ease-out">
+    
+    </div>
+  </div>
+</section>
 
 <!-- ==================== L'EXPERTISE — Gapless Bento Grid ==================== -->
 <section id="expertise" class="relative py-32 md:py-48">

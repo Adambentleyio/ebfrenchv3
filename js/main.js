@@ -42,7 +42,6 @@ gsap.registerPlugin(ScrollTrigger);
   const heroRule = document.querySelector('[data-hero-rule]');
   const heroEyebrow = document.querySelector('[data-hero-eyebrow]');
   const heroWords = document.querySelectorAll('[data-hero-word]');
-  const heroInlineImg = document.querySelector('[data-hero-inline-img]');
   const heroSubtitle = document.querySelector('[data-hero-subtitle]');
   const heroCta = document.querySelector('[data-hero-cta]');
   const heroImage = document.querySelector('[data-hero-image]');
@@ -53,7 +52,6 @@ gsap.registerPlugin(ScrollTrigger);
   gsap.set(heroRule, { width: 0 });
   gsap.set(heroEyebrow, { opacity: 0, x: -24 });
   gsap.set(heroWords, { opacity: 0, y: 32 });
-  gsap.set(heroInlineImg, { opacity: 0, scale: 0 });
   gsap.set(heroSubtitle, { opacity: 0, y: 18 });
   gsap.set(heroCta.children, { opacity: 0, y: 16 });
   gsap.set(heroImage, { clipPath: 'inset(0 0 100% 0)' });
@@ -71,12 +69,6 @@ gsap.registerPlugin(ScrollTrigger);
       stagger: 0.08,
       ease: 'power3.out'
     }, 0.28)
-    .to(heroInlineImg, {
-      opacity: 1,
-      scale: 1,
-      duration: 0.55,
-      ease: 'back.out(1.7)'
-    }, 0.65)
     .to(heroSubtitle, { opacity: 1, y: 0, duration: 0.6 }, 0.82)
     .to(heroCta.children, {
       opacity: 1,
@@ -98,6 +90,32 @@ gsap.registerPlugin(ScrollTrigger);
       stagger: 0.15,
       ease: 'back.out(1.4)'
     }, 1.3);
+})();
+
+/* ── Video Dialog ── */
+(function initVideoDialog() {
+  const dialog = document.getElementById('video-dialog');
+  const playBtn = document.querySelector('[data-play-btn]');
+  const closeBtn = document.querySelector('[data-dialog-close]');
+  const iframe = document.getElementById('vimeo-iframe');
+  if (!dialog || !playBtn || !iframe) return;
+
+  playBtn.addEventListener('click', () => {
+    iframe.src = 'https://player.vimeo.com/video/846210210?autoplay=1';
+    dialog.showModal();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    dialog.close();
+    iframe.src = '';
+  });
+
+  dialog.addEventListener('click', (e) => {
+    if (e.target === dialog) {
+      dialog.close();
+      iframe.src = '';
+    }
+  });
 })();
 
 /* ── Community Pinned Split (>= 1024px only) ── */
@@ -290,6 +308,27 @@ gsap.registerPlugin(ScrollTrigger);
   if (marquee) {
     marquee.innerHTML = marquee.innerHTML + marquee.innerHTML;
   }
+})();
+
+/* ── Logo Strip Entrance ── */
+(function initLogoStrip() {
+  const strip = document.querySelector('[data-gsap-logo-strip]');
+  if (!strip) return;
+  gsap.fromTo(strip, {
+    opacity: 0,
+    y: 20
+  }, {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: strip,
+      start: 'top 85%',
+      toggleActions: 'play none none none',
+    },
+    once: true
+  });
 })();
 
 console.log('EB French Tutoring — Ready.');
