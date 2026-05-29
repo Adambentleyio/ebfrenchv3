@@ -126,28 +126,53 @@ gsap.registerPlugin(ScrollTrigger);
   const pinnedLeft = document.getElementById('pinned-left');
   const pinnedContainer = document.getElementById('pinned-split-container');
   let communityPinST = null;
+  let resizeTicking = false;
+
+  function createPin() {
+    if (!pinnedLeft || !pinnedContainer) return;
+    communityPinST = ScrollTrigger.create({
+      trigger: pinnedContainer,
+      start: 'top top',
+      end: 'bottom bottom',
+      pin: pinnedLeft,
+      pinSpacing: false,
+    });
+  }
+
+  function destroyPin() {
+    if (communityPinST) {
+      communityPinST.kill();
+      communityPinST = null;
+    }
+    if (pinnedLeft) pinnedLeft.removeAttribute('style');
+  }
 
   function handleCommunityPin() {
     const shouldPin = window.innerWidth >= 1024;
 
-    if (shouldPin && !communityPinST && pinnedLeft && pinnedContainer) {
-      communityPinST = ScrollTrigger.create({
-        trigger: pinnedContainer,
-        start: 'top top',
-        end: 'bottom bottom',
-        pin: pinnedLeft,
-        pinSpacing: false,
-      });
+    if (shouldPin && !communityPinST) {
+      createPin();
     } else if (!shouldPin && communityPinST) {
-      communityPinST.kill();
-      communityPinST = null;
+      destroyPin();
       ScrollTrigger.refresh();
-      if (pinnedLeft) pinnedLeft.removeAttribute('style');
     }
   }
 
   handleCommunityPin();
-  window.addEventListener('resize', handleCommunityPin);
+
+  window.addEventListener('resize', function () {
+    if (!resizeTicking) {
+      resizeTicking = true;
+      requestAnimationFrame(function () {
+        resizeTicking = false;
+        handleCommunityPin();
+      });
+    }
+  });
+
+  window.addEventListener('load', function () {
+    ScrollTrigger.refresh();
+  });
 })();
 
 /* ── Scrub Text Reveals ── */
