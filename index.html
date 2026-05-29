@@ -34,7 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet (compiled by Tailwind CLI during Netlify build) -->
-  <link rel="stylesheet" href="css/styles.css?v=6">
+  <link rel="stylesheet" href="css/styles.css?v=7">
 
   <!-- GSAP (loaded deferred, main.js will depend on these) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -98,7 +98,7 @@
           <span data-hero-word style="font-weight: 800; font-style: italic; color: #A7636D; opacity: 0;">Reimagined.</span>
         </h1>
 
-        <p class="font-body text-brand-text/70 text-xl md:text-3xl max-w-xl leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
+        <p class="font-body text-brand-text/70 text-xl md:text-2xl max-w-xl leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
           An immersive and personalized experience, tailored to all ages. Individualized tutoring sessions designed to match your unique needs and learning style.
         </p>
 
@@ -107,12 +107,12 @@
             <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor"><path d="M0 0v16l14-8z"/></svg>
             <span>Watch video</span>
           </button>
-          <a href="#services" class="btn-secondary" style="opacity: 0;">Explore Services</a>
+          <a href="#services" class="btn-secondary" style="opacity: 0;">Contact or book a session</a>
         </div>
       </div>
 
       <!-- Image block -->
-      <div class="md:col-span-5 relative mt-16 md:mt-0" data-hero-image-block>
+      <div class="md:col-span-4 relative mt-16 md:mt-0" data-hero-image-block>
         <div class="relative -ml-8 md:-ml-16 max-w-lg ml-auto">
           <div class="relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] rotate-3 group" data-hero-image>
             <img src="assets/eb-french-profile.webp"
@@ -253,61 +253,73 @@
     <!-- Bento Grid: 12 cols, dense flow, ZERO empty cells -->
     <div class="grid grid-cols-1 md:grid-cols-12 gap-4 [grid-auto-flow:dense]">
 
-      <!-- Card 1: Passion — col-span-7, row-span-2 (hero card) -->
-      <div class="md:col-span-7 md:row-span-2 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer p-8 md:p-12 flex flex-col justify-between min-h-[340px]"
+      <!-- Card 1: Visiting France — col-span-6 -->
+      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer p-8 md:p-12 flex flex-col justify-between min-h-[340px]"
            data-gsap-card>
         <div>
-          <span class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase block mb-4">The Fuel</span>
-          <h3 class="font-display font-bold text-white text-4xl md:text-5xl tracking-[-0.02em] mb-3">Passion</h3>
+          <span class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase block mb-4">01</span>
+          <h3 class="font-display font-bold text-white text-4xl md:text-5xl tracking-[-0.02em] mb-3">Visiting France</h3>
           <p class="font-body text-white/70 text-lg max-w-md leading-relaxed">
-            A successful lesson is the resultant alchemy of enthusiasm, curiosity, inspiration and creativity. Feel galvanised and let's share the excitement of your learning.
+            Planning a trip to France? Learn what you need to make the most of your travels &mdash; from ordering at restaurants to navigating local culture with confidence.
           </p>
         </div>
         <div class="absolute -bottom-8 -right-8 w-48 h-48 rounded-full opacity-10 pointer-events-none"
              style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
       </div>
 
-      <!-- Card 2: Communication — col-span-5 -->
-      <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
+      <!-- Card 2: International Business — col-span-6 -->
+      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[340px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Foundation</span>
-        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Communication</h3>
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">02</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">International Business</h3>
         <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-xs">
-          Teaching is the mastered ability to communicate ideas in a clear, succinct way. Let's get talking.
+          Have clients in a French-speaking country? Looking to expand? Learn how to build rapport and navigate those new opportunities with fluency and cultural insight.
         </p>
         <div class="absolute top-0 right-0 w-32 h-32 rounded-full -translate-y-1/3 translate-x-1/3 opacity-5 pointer-events-none"
              style="background: radial-gradient(circle, rgba(12,12,24,1) 0%, transparent 70%);"></div>
       </div>
 
-      <!-- Card 3: Knowledge — col-span-5 -->
-      <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
+      <!-- Card 3: Little Adventures — col-span-6 -->
+      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-secondary group p-8 flex flex-col min-h-[200px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Depth</span>
-        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Knowledge</h3>
-        <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-xs">
-          Bachelors in French Studies, Masters in Psychology &mdash; equipping me to teach in the most effective and efficient way possible.
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">03</span>
+        <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Little Adventures</h3>
+        <p class="font-body text-white/60 text-base leading-relaxed max-w-sm">
+          Children learning French can often find the classroom distracting. I provide a nurturing learning environment that supports your child's natural curiosity.
         </p>
       </div>
 
-      <!-- Card 4: Commitment — col-span-6 -->
+      <!-- Card 4: GCSE & A-Level — col-span-6 -->
       <div class="md:col-span-6 relative overflow-hidden rounded-2xl border border-black/[0.04] group p-8 flex flex-col min-h-[200px]"
            data-gsap-card>
         <div class="absolute inset-0 opacity-[0.03] bg-cover bg-center"
              style="background-image: url('assets/bento_books.jpg'); filter: grayscale(1);"></div>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">The Standard</span>
-        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2 relative z-10">Commitment</h3>
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">04</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2 relative z-10">GCSE &amp; A-Level</h3>
         <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-sm relative z-10">
-          Consistently professional, high-quality lessons with personalised client targets and regular monitoring of progress.
+          For students studying French at GCSE or A-Level, I provide a focused learning environment that supports and enhances the curriculum.
         </p>
       </div>
 
-      <!-- Card 5: Collaboration — col-span-6 -->
-      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-secondary group p-8 flex flex-col min-h-[200px]"
+      <!-- Card 5: Beginners — col-span-6 -->
+      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-primary group p-8 flex flex-col min-h-[200px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Partnership</span>
-        <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Collaboration</h3>
+        <span class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">05</span>
+        <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Beginners</h3>
         <p class="font-body text-white/60 text-base leading-relaxed max-w-sm">
-          Student autonomy is paramount; each lesson is a dialogue. Teaming my high expectations with your needs &mdash; with this combined ambition, we get results.
+          Ready to start your French journey? We focus on the foundations of conversation before expanding your ideas. C'est parti!
+        </p>
+        <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full opacity-10 pointer-events-none"
+             style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
+      </div>
+
+      <!-- Card 6: Passion — col-span-6 -->
+      <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[200px]"
+           data-gsap-card>
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">06</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Passion</h3>
+        <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-sm">
+          Unlock the beauty and elegance of France's capital city and feel like a local by speaking the language with authenticity.
         </p>
       </div>
     </div>
