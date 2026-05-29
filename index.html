@@ -34,7 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheet (compiled by Tailwind CLI during Netlify build) -->
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
 
   <!-- GSAP (loaded deferred, main.js will depend on these) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -49,22 +49,22 @@
   <div class="glass-nav rounded-full px-6 py-3 flex items-center gap-8 mx-auto shadow-lg">
     <a href="#" class="flex items-center gap-3 no-underline">
       <img src="assets/ebfrenchv2_logo.jpg" alt="EB French Tutoring" class="h-8 w-auto rounded-full object-cover" width="32" height="32">
-      <span class="font-display font-bold text-brand-text text-base tracking-tight hidden sm:inline">EB French</span>
+      <span class="font-display font-bold text-brand-text text-lg tracking-tight hidden sm:inline">EB French</span>
     </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-medium text-brand-text/70">
+    <div class="hidden md:flex items-center gap-6 text-base font-medium text-brand-text/70">
       <a href="#expertise" class="hover:text-brand-primary transition-colors duration-300">Expertise</a>
       <a href="#testimonials" class="hover:text-brand-primary transition-colors duration-300">Reviews</a>
       <a href="#community" class="hover:text-brand-primary transition-colors duration-300">Community</a>
       <a href="#services" class="hover:text-brand-primary transition-colors duration-300">Services</a>
     </div>
-    <a href="#cta" class="hidden sm:inline-flex bg-brand-primary text-white text-sm font-semibold px-5 py-2.5 rounded-[4.5px] hover:bg-brand-secondary transition-all duration-300 no-underline tracking-tight">
+    <a href="#cta" class="hidden sm:inline-flex bg-brand-primary text-white text-base font-semibold px-5 py-2.5 rounded-[4.5px] hover:bg-brand-secondary transition-all duration-300 no-underline tracking-tight">
       Get in Touch
     </a>
     <button class="md:hidden text-brand-text" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><rect width="22" height="2" rx="1" fill="currentColor"/><rect y="7" width="22" height="2" rx="1" fill="currentColor"/><rect y="14" width="22" height="2" rx="1" fill="currentColor"/></svg>
     </button>
   </div>
-  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-3 mx-6 glass-nav rounded-2xl p-6 flex flex-col gap-4 text-sm font-medium">
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-3 mx-6 glass-nav rounded-2xl p-6 flex flex-col gap-4 text-base font-medium">
     <a href="#expertise" class="text-brand-text/70 hover:text-brand-primary">Expertise</a>
     <a href="#testimonials" class="text-brand-text/70 hover:text-brand-primary">Reviews</a>
     <a href="#community" class="text-brand-text/70 hover:text-brand-primary">Community</a>
@@ -87,18 +87,18 @@
       <div class="md:col-span-7 relative z-20">
         <div class="w-16 h-px bg-brand-accent/40 mb-6" data-hero-rule></div>
 
-        <p class="font-body text-brand-accent text-sm font-medium tracking-widest uppercase mb-4" data-hero-eyebrow>
+        <p class="font-body text-brand-accent text-base font-medium tracking-widest uppercase mb-4" data-hero-eyebrow>
           Parlez-vous Fran&ccedil;ais?
         </p>
 
         <h1 class="font-display font-bold text-brand-primary leading-[1.05] tracking-[-0.025em] max-w-5xl mb-8"
-            style="font-size: clamp(2rem, 3.8vw, 4.2rem);">
+            style="font-size: clamp(2.5rem, 4.5vw, 5rem);">
           <span data-hero-word style="font-weight: 800; opacity: 0;">Learn French,</span>
           <br>
           <span data-hero-word style="font-weight: 800; font-style: italic; color: #A7636D; opacity: 0;">Reimagined.</span>
         </h1>
 
-        <p class="font-body text-brand-text/70 text-lg md:text-xl max-w-xl leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
+        <p class="font-body text-brand-text/70 text-xl md:text-3xl max-w-xl leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
           An immersive and personalized experience, tailored to all ages. Individualized tutoring sessions designed to match your unique needs and learning style.
         </p>
 
@@ -170,7 +170,7 @@
   <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
     <div class="text-center mb-12 md:mb-16">
       <div class="w-12 h-px bg-brand-accent/30 mx-auto mb-4"></div>
-      <p class="font-body text-brand-accent text-xs font-medium tracking-[0.2em] uppercase">
+      <p class="font-body text-brand-accent text-sm font-medium tracking-[0.2em] uppercase">
         Proud to have taught students from
       </p>
     </div>
@@ -240,10 +240,10 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
       <div>
         <h2 class="font-display font-bold text-brand-primary tracking-[-0.02em] mb-3"
-            style="font-size: clamp(2.2rem, 3.5vw, 3.5rem);">
+            style="font-size: clamp(2.6rem, 4vw, 4.2rem);">
           L'expertise
         </h2>
-        <p class="font-body text-brand-text/60 text-lg max-w-md">
+        <p class="font-body text-brand-text/60 text-xl max-w-md">
           The mastered ability to communicate, with passion and commitment &mdash; tailored to every learner.
         </p>
       </div>
@@ -257,9 +257,9 @@
       <div class="md:col-span-7 md:row-span-2 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer p-8 md:p-12 flex flex-col justify-between min-h-[340px]"
            data-gsap-card>
         <div>
-          <span class="font-body text-brand-accent/80 text-xs font-semibold tracking-[0.2em] uppercase block mb-4">The Fuel</span>
-          <h3 class="font-display font-bold text-white text-3xl md:text-4xl tracking-[-0.02em] mb-3">Passion</h3>
-          <p class="font-body text-white/70 text-base max-w-md leading-relaxed">
+          <span class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase block mb-4">The Fuel</span>
+          <h3 class="font-display font-bold text-white text-4xl md:text-5xl tracking-[-0.02em] mb-3">Passion</h3>
+          <p class="font-body text-white/70 text-lg max-w-md leading-relaxed">
             A successful lesson is the resultant alchemy of enthusiasm, curiosity, inspiration and creativity. Feel galvanised and let's share the excitement of your learning.
           </p>
         </div>
@@ -270,9 +270,9 @@
       <!-- Card 2: Communication — col-span-5 -->
       <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">The Foundation</span>
-        <h3 class="font-display font-bold text-brand-primary text-2xl tracking-[-0.02em] mb-2">Communication</h3>
-        <p class="font-body text-brand-text/60 text-sm leading-relaxed max-w-xs">
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Foundation</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Communication</h3>
+        <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-xs">
           Teaching is the mastered ability to communicate ideas in a clear, succinct way. Let's get talking.
         </p>
         <div class="absolute top-0 right-0 w-32 h-32 rounded-full -translate-y-1/3 translate-x-1/3 opacity-5 pointer-events-none"
@@ -282,9 +282,9 @@
       <!-- Card 3: Knowledge — col-span-5 -->
       <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">The Depth</span>
-        <h3 class="font-display font-bold text-brand-primary text-2xl tracking-[-0.02em] mb-2">Knowledge</h3>
-        <p class="font-body text-brand-text/60 text-sm leading-relaxed max-w-xs">
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Depth</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Knowledge</h3>
+        <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-xs">
           Bachelors in French Studies, Masters in Psychology &mdash; equipping me to teach in the most effective and efficient way possible.
         </p>
       </div>
@@ -294,9 +294,9 @@
            data-gsap-card>
         <div class="absolute inset-0 opacity-[0.03] bg-cover bg-center"
              style="background-image: url('assets/bento_books.jpg'); filter: grayscale(1);"></div>
-        <span class="font-body text-brand-accent/70 text-xs font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">The Standard</span>
-        <h3 class="font-display font-bold text-brand-primary text-2xl tracking-[-0.02em] mb-2 relative z-10">Commitment</h3>
-        <p class="font-body text-brand-text/60 text-sm leading-relaxed max-w-sm relative z-10">
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">The Standard</span>
+        <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2 relative z-10">Commitment</h3>
+        <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-sm relative z-10">
           Consistently professional, high-quality lessons with personalised client targets and regular monitoring of progress.
         </p>
       </div>
@@ -304,9 +304,9 @@
       <!-- Card 5: Collaboration — col-span-6 -->
       <div class="md:col-span-6 relative overflow-hidden rounded-2xl bg-brand-secondary group p-8 flex flex-col min-h-[200px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-xs font-semibold tracking-[0.2em] uppercase block mb-3">The Partnership</span>
-        <h3 class="font-display font-bold text-white text-2xl tracking-[-0.02em] mb-2">Collaboration</h3>
-        <p class="font-body text-white/60 text-sm leading-relaxed max-w-sm">
+        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">The Partnership</span>
+        <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Collaboration</h3>
+        <p class="font-body text-white/60 text-base leading-relaxed max-w-sm">
           Student autonomy is paramount; each lesson is a dialogue. Teaming my high expectations with your needs &mdash; with this combined ambition, we get results.
         </p>
       </div>
@@ -326,10 +326,10 @@
   <div class="w-full max-w-7xl mx-auto px-6 md:px-12 relative z-10">
     <div class="text-center mb-16">
       <h2 class="font-display font-bold text-brand-primary tracking-[-0.02em] mb-4"
-          style="font-size: clamp(2.2rem, 3.5vw, 3.5rem);">
+          style="font-size: clamp(2.6rem, 4vw, 4.2rem);">
         Les Recommendations
       </h2>
-      <p class="font-body text-brand-text/60 text-lg max-w-lg mx-auto">
+      <p class="font-body text-brand-text/60 text-xl max-w-lg mx-auto">
         What some wonderful people are saying about their French learning journey.
       </p>
     </div>
@@ -340,10 +340,10 @@
             <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04] h-full flex flex-col">
               <div class="flex items-center gap-3 mb-4">
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Michael D</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Michael D</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma is a superb French teacher. I couldn't recommend her enough. She really cares about each and every one of our sessions.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Emma is a superb French teacher. I couldn't recommend her enough. She really cares about each and every one of our sessions.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -351,10 +351,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Roger B</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Roger B</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;I have learned more from Emma in 12 weeks than in the 12 years since I retired! I would thoroughly recommend Emma as a tutor.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;I have learned more from Emma in 12 weeks than in the 12 years since I retired! I would thoroughly recommend Emma as a tutor.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -362,10 +362,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Year 4 Pupil</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Year 4 Pupil</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;My tutor is kind and helpful. My lessons are fun and interesting and I look forward to them every week.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;My tutor is kind and helpful. My lessons are fun and interesting and I look forward to them every week.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -373,10 +373,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Year 9 Pupil</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Year 9 Pupil</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma has really helped me prepare for my International exchange. She always starts the lesson with a cheery Salut!&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Emma has really helped me prepare for my International exchange. She always starts the lesson with a cheery Salut!&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -384,10 +384,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Patrick M</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Patrick M</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;I would recommend Emma to anyone, regardless of level or requirements. She put my school French on firmer footing.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;I would recommend Emma to anyone, regardless of level or requirements. She put my school French on firmer footing.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -395,10 +395,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Julie S</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Julie S</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma was an excellent tutor, supportive, encouraging and friendly. The sessions were tailored to my needs.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Emma was an excellent tutor, supportive, encouraging and friendly. The sessions were tailored to my needs.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -406,10 +406,10 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Niall S</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Niall S</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Contacting Emma was a pivotal point in my language learning journey. I feel more confident and am really enjoying the process.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Contacting Emma was a pivotal point in my language learning journey. I feel more confident and am really enjoying the process.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -417,11 +417,11 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Leanne M</p>
-                  <p class="font-body text-brand-muted text-xs">Parent of GCSE student</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Leanne M</p>
+                  <p class="font-body text-brand-muted text-sm">Parent of GCSE student</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Excellent tutor! My daughter is enjoying her lessons and thriving. Highly recommended.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Excellent tutor! My daughter is enjoying her lessons and thriving. Highly recommended.&rdquo;</p>
             </div>
           </div>
           <div class="min-w-full md:min-w-[33.333%] p-4">
@@ -429,11 +429,11 @@
               <div class="flex items-center gap-3 mb-4">
 
                 <div>
-                  <p class="font-display font-semibold text-brand-primary text-sm">Samuel B</p>
-                  <p class="font-body text-brand-muted text-xs">University Student</p>
+                  <p class="font-display font-semibold text-brand-primary text-base">Samuel B</p>
+                  <p class="font-body text-brand-muted text-sm">University Student</p>
                 </div>
               </div>
-              <p class="font-body text-brand-text/70 text-sm leading-relaxed flex-1">&ldquo;Emma has the unique gift to bring the best out of her students. I would 100% recommend to anyone seeking a French tutor.&rdquo;</p>
+              <p class="font-body text-brand-text/70 text-base leading-relaxed flex-1">&ldquo;Emma has the unique gift to bring the best out of her students. I would 100% recommend to anyone seeking a French tutor.&rdquo;</p>
             </div>
           </div>
         </div>
@@ -467,9 +467,9 @@
           </div>
         </div>
         <div class="relative z-10 mt-auto p-8 md:p-10">
-          <p class="font-body text-brand-accent/80 text-xs font-semibold tracking-[0.2em] uppercase mb-3">Featured Review</p>
-          <h3 class="font-display font-bold text-white text-2xl tracking-[-0.02em] mb-2">Michael D</h3>
-          <p class="font-body text-white/60 text-sm leading-relaxed max-w-xs">
+          <p class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3">Featured Review</p>
+          <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Michael D</h3>
+          <p class="font-body text-white/60 text-base leading-relaxed max-w-xs">
             &ldquo;Emma is a superb French teacher. I couldn't recommend her enough. She really cares about each and every one of our sessions.&rdquo;
           </p>
         </div>
@@ -488,8 +488,8 @@
             <svg class="ml-0.5 transition-transform duration-500 ease-out group-hover:scale-110" width="18" height="20" viewBox="0 0 14 16" fill="white" aria-hidden="true"><path d="M0 0v16l14-8z"/></svg>
           </div>
           <div>
-            <h3 class="font-display font-bold text-white text-xl tracking-[-0.02em] mb-1">Niall S</h3>
-            <p class="font-body text-white/55 text-sm leading-relaxed">
+            <h3 class="font-display font-bold text-white text-2xl tracking-[-0.02em] mb-1">Niall S</h3>
+            <p class="font-body text-white/55 text-base leading-relaxed">
               &ldquo;Contacting Emma was a pivotal point in my language learning journey. I feel more confident and am really enjoying the process.&rdquo;
             </p>
           </div>
@@ -509,9 +509,9 @@
             <svg class="ml-0.5 transition-transform duration-500 ease-out group-hover:scale-110" width="18" height="20" viewBox="0 0 14 16" fill="#A7636D" aria-hidden="true"><path d="M0 0v16l14-8z"/></svg>
           </div>
           <div>
-            <h3 class="font-display font-bold text-brand-primary text-xl tracking-[-0.02em] mb-1">Samuel B</h3>
-            <p class="font-body text-brand-muted text-xs uppercase tracking-wider mb-0.5">University Student</p>
-            <p class="font-body text-brand-text/60 text-sm leading-relaxed">
+            <h3 class="font-display font-bold text-brand-primary text-2xl tracking-[-0.02em] mb-1">Samuel B</h3>
+            <p class="font-body text-brand-muted text-sm uppercase tracking-wider mb-0.5">University Student</p>
+            <p class="font-body text-brand-text/60 text-base leading-relaxed">
               &ldquo;Emma has the unique gift to bring the best out of her students. I would 100% recommend to anyone seeking a French tutor.&rdquo;
             </p>
           </div>
@@ -530,14 +530,14 @@
       <div class="lg:w-[42%] lg:pr-16 lg:h-screen lg:flex lg:items-center flex-shrink-0" id="pinned-left">
         <div>
           <h2 class="font-display font-bold text-brand-primary tracking-[-0.02em] mb-6"
-              style="font-size: clamp(2.2rem, 3.5vw, 3.5rem);">
+              style="font-size: clamp(2.6rem, 4vw, 4.2rem);">
             L'amiti&eacute;
           </h2>
-          <p class="font-body text-brand-text/60 text-lg max-w-sm mb-8 leading-relaxed">
+          <p class="font-body text-brand-text/60 text-xl max-w-sm mb-8 leading-relaxed">
             Located in the heart of Nantwich, our conversational French classes and tutoring sessions bring language learners together.
           </p>
           <div class="hidden lg:block w-16 h-px bg-brand-accent/40 mb-6"></div>
-          <span class="font-body text-brand-muted text-xs tracking-[0.2em] uppercase hidden lg:block">Scroll to explore</span>
+          <span class="font-body text-brand-muted text-sm tracking-[0.2em] uppercase hidden lg:block">Scroll to explore</span>
         </div>
       </div>
       <!-- Right: Scrolling Gallery -->
@@ -554,7 +554,7 @@
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent"></div>
           </div>
           <!-- Card 2 -->
-          <h3 class="font-display font-bold text-brand-primary text-xl mb-3 tracking-[-0.01em]">Tutoring</h3>
+          <h3 class="font-display font-bold text-brand-primary text-2xl mb-3 tracking-[-0.01em]">Tutoring</h3>
           <p class="font-body text-brand-text/60 leading-relaxed">
             An immersive and personalized experience, tailored to all ages. Our individualized tutoring sessions are designed to cater to your unique needs and learning style, ensuring that you reach your language goals in the most efficient way possible.
           </p>
@@ -568,8 +568,8 @@
                  width="640" height="400" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent"></div>
           </div>
-          <h3 class="font-display font-bold text-brand-primary text-xl mb-3 tracking-[-0.01em]">Conversational Classes</h3>
-          <p class="font-body text-brand-text/60 text-sm leading-relaxed">
+          <h3 class="font-display font-bold text-brand-primary text-2xl mb-3 tracking-[-0.01em]">Conversational Classes</h3>
+          <p class="font-body text-brand-text/60 text-base leading-relaxed">
             Immerse yourself in French culture, enhance your fluency, and gain confidence to express yourself in this beautiful language. Our small-group sessions create a supportive environment for real conversation practice.
           </p>
         </div>
@@ -584,11 +584,11 @@
                  width="640" height="400" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/20 via-transparent to-transparent"></div>
           </div>
-          <h3 class="font-display font-bold text-brand-primary text-xl mb-3 tracking-[-0.01em]">Join Our Community</h3>
-          <p class="font-body text-brand-text/60 text-sm leading-relaxed mb-5">
+          <h3 class="font-display font-bold text-brand-primary text-2xl mb-3 tracking-[-0.01em]">Join Our Community</h3>
+          <p class="font-body text-brand-text/60 text-base leading-relaxed mb-5">
             Whether you're a complete beginner or an advanced speaker, there's a place for you in our growing French community in Cheshire. Come say bonjour!
           </p>
-          <a href="#cta" class="btn-primary text-sm px-6 py-2.5">Get in Touch</a>
+          <a href="#cta" class="btn-primary text-base px-6 py-2.5">Get in Touch</a>
         </div>
       </div>
     </div>
@@ -600,10 +600,10 @@
   <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
     <div class="mb-16">
       <h2 class="font-display font-bold text-brand-primary tracking-[-0.02em] mb-4"
-          style="font-size: clamp(2.2rem, 3.5vw, 3.5rem);">
+          style="font-size: clamp(2.6rem, 4vw, 4.2rem);">
         L'aventure
       </h2>
-      <p class="font-body text-brand-text/60 text-lg max-w-xl">
+      <p class="font-body text-brand-text/60 text-xl max-w-xl">
         Choose your own adventure. Whatever your French language goal, there's a path for you.
       </p>
     </div>
@@ -614,10 +614,10 @@
       <div class="accordion-panel active flex-[3] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#E8DDD0] to-[#D4C4B0]" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('assets/accordion_visiting.jpg'); filter: grayscale(1) contrast(1.2);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">01</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">01</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">Visiting France</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">Planning a trip to France? Learn what you need to make the most of your travels &mdash; from ordering at restaurants to navigating local culture with confidence.</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">Visiting France</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">Planning a trip to France? Learn what you need to make the most of your travels &mdash; from ordering at restaurants to navigating local culture with confidence.</p>
           </div>
         </div>
       </div>
@@ -626,10 +626,10 @@
       <div class="accordion-panel flex-[0.6] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#D1D5DB] to-[#9CA3AF]" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/accordion_business.jpg'); filter: grayscale(1) contrast(1.2);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">02</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">02</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">International Business</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">Have clients in a French-speaking country? Looking to expand? Learn how to build rapport and navigate those new opportunities with fluency and cultural insight.</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">International Business</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">Have clients in a French-speaking country? Looking to expand? Learn how to build rapport and navigate those new opportunities with fluency and cultural insight.</p>
           </div>
         </div>
       </div>
@@ -638,10 +638,10 @@
       <div class="accordion-panel flex-[0.6] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#FDE68A]/50 to-[#FBBF24]/40" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/accordion_children.jpg'); filter: grayscale(1) contrast(1.1);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">03</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">03</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">Little Adventures</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">Children learning French can often find the classroom distracting. I provide a nurturing learning environment that supports your child's natural curiosity.</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">Little Adventures</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">Children learning French can often find the classroom distracting. I provide a nurturing learning environment that supports your child's natural curiosity.</p>
           </div>
         </div>
       </div>
@@ -650,10 +650,10 @@
       <div class="accordion-panel flex-[0.6] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#BFDBFE]/50 to-[#93C5FD]/40" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/accordion_gcse.jpg'); filter: grayscale(1) contrast(1.1);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">04</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">04</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">GCSE &amp; A-Level</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">For students studying French at GCSE or A-Level, I provide a focused learning environment that supports and enhances the curriculum.</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">GCSE &amp; A-Level</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">For students studying French at GCSE or A-Level, I provide a focused learning environment that supports and enhances the curriculum.</p>
           </div>
         </div>
       </div>
@@ -662,10 +662,10 @@
       <div class="accordion-panel flex-[0.6] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#DDD6FE]/50 to-[#A78BFA]/40" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/accordion_beginners.jpg'); filter: grayscale(1) contrast(1.1);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">05</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">05</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">Beginners</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">Ready to start your French journey? We focus on the foundations of conversation before expanding your ideas. C'est parti!</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">Beginners</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">Ready to start your French journey? We focus on the foundations of conversation before expanding your ideas. C'est parti!</p>
           </div>
         </div>
       </div>
@@ -674,10 +674,10 @@
       <div class="accordion-panel flex-[0.6] rounded-2xl overflow-hidden relative group bg-gradient-to-br from-[#FECACA]/50 to-[#F87171]/40" data-accordion>
         <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/accordion_paris.jpg'); filter: grayscale(1) contrast(1.1);"></div>
         <div class="relative z-10 p-8 flex flex-col justify-end h-full">
-          <span class="panel-label font-body text-brand-primary/60 text-sm font-semibold tracking-[0.15em] uppercase mb-3 block">06</span>
+          <span class="panel-label font-body text-brand-primary/60 text-base font-semibold tracking-[0.15em] uppercase mb-3 block">06</span>
           <div class="panel-content">
-            <h3 class="font-display font-bold text-brand-primary text-2xl mb-3">Passion</h3>
-            <p class="font-body text-brand-text/70 text-sm leading-relaxed max-w-xs">Unlock the beauty and elegance of France's capital city and feel like a local by speaking the language with authenticity.</p>
+            <h3 class="font-display font-bold text-brand-primary text-3xl mb-3">Passion</h3>
+            <p class="font-body text-brand-text/70 text-base leading-relaxed max-w-xs">Unlock the beauty and elegance of France's capital city and feel like a local by speaking the language with authenticity.</p>
           </div>
         </div>
       </div>
@@ -688,33 +688,33 @@
 <!-- ==================== INFINITE MARQUEE — French Vocabulary ==================== -->
 <section class="relative my-20 py-12 md:py-16 border-y border-black/[0.05] overflow-hidden bg-brand-primary">
   <div class="marquee-track flex gap-12 items-center whitespace-nowrap select-none" id="marquee-track">
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Bonjour</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Salut</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">C'est parti</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Merci</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">&Agrave; bient&ocirc;t</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Enchant&eacute;</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Parlez-vous</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Bonjour</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Salut</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">C'est parti</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Merci</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">&Agrave; bient&ocirc;t</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Enchant&eacute;</span>
-    <span class="font-body text-brand-accent/60 text-lg">&bull;</span>
-    <span class="font-display font-bold text-white/80 text-5xl md:text-7xl tracking-[-0.03em]">Parlez-vous</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Bonjour</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Salut</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">C'est parti</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Merci</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">&Agrave; bient&ocirc;t</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Enchant&eacute;</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Parlez-vous</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Bonjour</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Salut</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">C'est parti</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Merci</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">&Agrave; bient&ocirc;t</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Enchant&eacute;</span>
+    <span class="font-body text-brand-accent/60 text-xl">&bull;</span>
+    <span class="font-display font-bold text-white/80 text-6xl md:text-8xl tracking-[-0.03em]">Parlez-vous</span>
   </div>
 </section>
 
@@ -726,16 +726,16 @@
 
       <div class="md:col-span-5 md:pt-4">
         <h2 class="font-display font-bold text-brand-primary tracking-[-0.02em] mb-6"
-            style="font-size: clamp(2.5rem, 5vw, 4.2rem);">
+            style="font-size: clamp(3rem, 5.5vw, 5rem);">
           Talk French to me.
         </h2>
-        <p class="font-body text-brand-muted text-lg leading-relaxed mb-10 max-w-md"
+        <p class="font-body text-brand-muted text-xl leading-relaxed mb-10 max-w-md"
            data-scrub-text>Discuss tutoring and class schedules in Cheshire. Take your first step towards fluency today.
         </p>
 
         <div class="w-16 h-px bg-brand-accent/40 mb-6"></div>
 
-        <p class="font-body text-brand-muted text-sm mb-4">Prefer a call? I'd love to hear from you.</p>
+        <p class="font-body text-brand-muted text-base mb-4">Prefer a call? I'd love to hear from you.</p>
         <a href="tel:+447751145465" class="btn-secondary inline-flex items-center gap-3">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           07751 145465
@@ -748,31 +748,31 @@
 
           <div class="space-y-5">
             <div>
-              <label for="contact-name" class="font-body text-brand-text text-sm font-medium block mb-2">Your name</label>
+              <label for="contact-name" class="font-body text-brand-text text-base font-medium block mb-2">Your name</label>
               <input type="text" id="contact-name" name="name" required autocomplete="name"
-                     class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-sm font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 placeholder:text-brand-muted/70"
+                     class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-base font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 placeholder:text-brand-muted/70"
                      placeholder="Emma Bolland">
             </div>
 
             <div>
-              <label for="contact-email" class="font-body text-brand-text text-sm font-medium block mb-2">Email address</label>
+              <label for="contact-email" class="font-body text-brand-text text-base font-medium block mb-2">Email address</label>
               <input type="email" id="contact-email" name="email" required autocomplete="email"
-                     class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-sm font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 placeholder:text-brand-muted/70"
+                     class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-base font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 placeholder:text-brand-muted/70"
                      placeholder="you@example.com">
             </div>
 
             <div>
-              <label for="contact-message" class="font-body text-brand-text text-sm font-medium block mb-2">What would you like to discuss?</label>
+              <label for="contact-message" class="font-body text-brand-text text-base font-medium block mb-2">What would you like to discuss?</label>
               <textarea id="contact-message" name="message" rows="4" required
-                        class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-sm font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 resize-none placeholder:text-brand-muted/70"
+                        class="w-full bg-transparent border border-black/[0.06] rounded-[4.5px] px-4 py-3.5 text-brand-text text-base font-body outline-none focus:border-brand-primary/30 hover:border-brand-primary/20 transition-colors duration-300 resize-none placeholder:text-brand-muted/70"
                         placeholder="Tell me about your French learning goals..."></textarea>
             </div>
 
-            <button type="submit" class="btn-primary w-full text-base py-4 text-center">
+            <button type="submit" class="btn-primary w-full text-lg py-4 text-center">
               Send Message
             </button>
 
-            <p class="font-body text-brand-muted/90 text-xs text-center">
+            <p class="font-body text-brand-muted/90 text-sm text-center">
               I typically respond within 24 hours.
             </p>
           </div>
@@ -791,35 +791,35 @@
       <div class="md:col-span-5">
         <a href="#" class="flex items-center gap-3 mb-6 no-underline">
           <img src="assets/ebfrenchv2_logo.jpg" alt="EB French Tutoring" class="h-10 w-auto rounded-full object-cover" width="40" height="40">
-          <span class="font-display font-bold text-white text-xl tracking-tight">EB French Tutoring</span>
+          <span class="font-display font-bold text-white text-2xl tracking-tight">EB French Tutoring</span>
         </a>
-        <p class="font-body text-white/50 text-sm leading-relaxed max-w-sm mb-4">
+        <p class="font-body text-white/50 text-base leading-relaxed max-w-sm mb-4">
           A fresh and cutting edge French learning business by Emma Bolland. Learn French through 1-to-1 tutoring and classes in Nantwich, Cheshire.
         </p>
-        <p class="font-body text-white/30 text-xs">All rights reserved. 2026 &copy;</p>
+        <p class="font-body text-white/30 text-sm">All rights reserved. 2026 &copy;</p>
       </div>
 
       <!-- Links -->
       <div class="md:col-span-3">
-        <h4 class="font-display font-semibold text-white text-sm tracking-wide mb-5">Navigate</h4>
+        <h4 class="font-display font-semibold text-white text-base tracking-wide mb-5">Navigate</h4>
         <div class="flex flex-col gap-3">
-          <a href="#expertise" class="font-body text-white/50 text-sm hover:text-white transition-colors duration-300 no-underline">Expertise</a>
-          <a href="#testimonials" class="font-body text-white/50 text-sm hover:text-white transition-colors duration-300 no-underline">Reviews</a>
-          <a href="#community" class="font-body text-white/50 text-sm hover:text-white transition-colors duration-300 no-underline">Community</a>
-          <a href="#services" class="font-body text-white/50 text-sm hover:text-white transition-colors duration-300 no-underline">Services</a>
-          <a href="#cta" class="font-body text-white/50 text-sm hover:text-white transition-colors duration-300 no-underline">Contact</a>
+          <a href="#expertise" class="font-body text-white/50 text-base hover:text-white transition-colors duration-300 no-underline">Expertise</a>
+          <a href="#testimonials" class="font-body text-white/50 text-base hover:text-white transition-colors duration-300 no-underline">Reviews</a>
+          <a href="#community" class="font-body text-white/50 text-base hover:text-white transition-colors duration-300 no-underline">Community</a>
+          <a href="#services" class="font-body text-white/50 text-base hover:text-white transition-colors duration-300 no-underline">Services</a>
+          <a href="#cta" class="font-body text-white/50 text-base hover:text-white transition-colors duration-300 no-underline">Contact</a>
         </div>
       </div>
 
       <!-- Newsletter / Contact -->
       <div class="md:col-span-4" id="contact-form">
-        <h4 class="font-display font-semibold text-white text-sm tracking-wide mb-3">Monthly Newsletter</h4>
-        <p class="font-body text-white/50 text-sm mb-5">Including learning tips, local meetup event information and more!</p>
+        <h4 class="font-display font-semibold text-white text-base tracking-wide mb-3">Monthly Newsletter</h4>
+        <p class="font-body text-white/50 text-base mb-5">Including learning tips, local meetup event information and more!</p>
         <form name="newsletter" method="POST" netlify class="flex gap-2">
           <input type="hidden" name="form-name" value="newsletter">
           <input type="email" name="email" placeholder="Your email address" required
-                 class="flex-1 bg-white/10 border border-white/10 rounded-[4.5px] px-4 py-3 text-white text-sm placeholder-white/30 outline-none focus:border-white/30 transition-colors duration-300">
-          <button type="submit" class="bg-white text-brand-primary font-semibold text-sm px-6 py-3 rounded-[4.5px] hover:bg-brand-accent transition-all duration-300 whitespace-nowrap">
+                 class="flex-1 bg-white/10 border border-white/10 rounded-[4.5px] px-4 py-3 text-white text-base placeholder-white/30 outline-none focus:border-white/30 transition-colors duration-300">
+          <button type="submit" class="bg-white text-brand-primary font-semibold text-base px-6 py-3 rounded-[4.5px] hover:bg-brand-accent transition-all duration-300 whitespace-nowrap">
             Subscribe
           </button>
         </form>
