@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ['"Cabinet Grotesk"', 'sans-serif'],
-        body: ['"Outfit"', 'sans-serif'],
+        body: ['"Spectral"', '"Spectral-fallback"', 'Georgia', 'serif'],
       },
       colors: {
         brand: {

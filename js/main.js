@@ -359,4 +359,3 @@ gsap.registerPlugin(ScrollTrigger);
   });
 })();
 
-console.log('EB French Tutoring — Ready.');
