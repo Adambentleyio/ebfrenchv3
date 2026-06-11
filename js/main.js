@@ -100,6 +100,11 @@ gsap.registerPlugin(ScrollTrigger);
   const iframe = document.getElementById('vimeo-iframe');
   if (!dialog || !playBtns.length || !iframe) return;
 
+  function stopVideo() {
+    iframe.contentWindow.postMessage('{"method":"pause"}', '*');
+    iframe.src = '';
+  }
+
   playBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const videoId = btn.dataset.videoId || '846210210';
@@ -108,9 +113,12 @@ gsap.registerPlugin(ScrollTrigger);
     });
   });
 
+  dialog.addEventListener('cancel', () => {
+    stopVideo();
+  });
+
   dialog.addEventListener('close', () => {
-    iframe.contentWindow.postMessage('{"method":"pause"}', '*');
-    iframe.src = '';
+    stopVideo();
   });
 
   closeBtn.addEventListener('click', () => {
