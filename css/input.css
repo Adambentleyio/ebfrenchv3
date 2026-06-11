@@ -7,9 +7,9 @@
 /* ============================== */
 
 @layer base {
-  ::selection {
-    background: #0C0C18;
-    color: #fff;
+    ::selection {
+    background: theme('colors.brand.primary');
+    color: theme('colors.white');
   }
 
   * {
@@ -20,15 +20,15 @@
   a:focus-visible,
   button:focus-visible,
   input:focus-visible {
-    outline: 2px solid #A7636D;
+    outline: 2px solid theme('colors.brand.accent');
     outline-offset: 2px;
     border-radius: 1px;
   }
 
   body {
     font-family: 'Spectral', 'Spectral-fallback', Georgia, serif;
-    background: #F8F7F4;
-    color: #283338;
+    background: theme('colors.brand.surface');
+    color: theme('colors.brand.text');
   }
 
   h1, h2, h3, h4, .font-display {
@@ -89,8 +89,8 @@
 
   /* --- Primary Button --- */
   .btn-primary {
-    background: #0C0C18;
-    color: #FFFFFF;
+    background: theme('colors.brand.primary');
+    color: theme('colors.white');
     padding: 14px 36px;
     border-radius: 4.5px;
     font-weight: 600;
@@ -104,13 +104,13 @@
   .btn-primary:hover {
     transform: translate(-2px, -2px);
     box-shadow: 10px 10px 0px 0px rgba(4,18,31,0.18);
-    background: #1A1A2E;
+    background: theme('colors.brand.secondary');
   }
 
   /* --- Secondary Button --- */
   .btn-secondary {
     background: transparent;
-    color: #283338;
+    color: theme('colors.brand.text');
     padding: 14px 36px;
     border-radius: 4.5px;
     font-weight: 600;
@@ -122,7 +122,7 @@
     text-decoration: none;
   }
   .btn-secondary:hover {
-    border-color: #A7636D;
+    border-color: theme('colors.brand.accent');
     background: rgba(167,99,109,0.06);
     transform: translateY(-1px);
   }

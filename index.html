@@ -9,7 +9,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="EB French Tutoring — Learn French, Reimagined">
   <meta property="og:description" content="Immersive and personalized French tutoring for all ages. 1-to-1 sessions, conversational classes, and a vibrant French community in Nantwich, Cheshire.">
-  <meta property="og:image" content="https://ebfrenchtutoring.co.uk/assets/og-image.jpg">
+  <meta property="og:image" content="https://ebfrenchtutoring.co.uk/assets/eb-french-social.jpg">
   <meta property="og:url" content="https://ebfrenchtutoring.co.uk/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="EB French Tutoring — Learn French, Reimagined">
   <meta name="twitter:description" content="Immersive and personalized French tutoring for all ages. 1-to-1 sessions, conversational classes, and a vibrant French community in Nantwich, Cheshire.">
-  <meta name="twitter:image" content="https://ebfrenchtutoring.co.uk/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://ebfrenchtutoring.co.uk/assets/eb-french-social.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/ebfrenchv2_logo.jpg">
@@ -62,7 +62,9 @@
 </head>
 <body class="overflow-x-hidden">
 
-<main class="overflow-x-hidden w-full max-w-full mesh-bg">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-brand-primary focus:text-white focus:px-6 focus:py-3 focus:rounded-[4.5px] focus:font-semibold focus:no-underline focus:outline-none">Skip to content</a>
+
+<main id="main-content" class="overflow-x-hidden w-full max-w-full mesh-bg">
 
 <!-- ==================== NAVIGATION ==================== -->
 <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between">
@@ -71,19 +73,19 @@
       <img src="assets/ebfrenchv2_logo.jpg" alt="EB French Tutoring" class="h-8 w-auto rounded-full object-cover" width="32" height="32">
       <span class="font-display font-bold text-brand-text text-lg tracking-tight hidden sm:inline">EB French</span>
     </a>
-    <div class="hidden md:flex items-center gap-6 text-base font-medium text-brand-text/70">
+    <div class="hidden md:flex items-center gap-6 text-base font-medium text-brand-text/70 font-display">
       <a href="#Learning" class="hover:text-brand-primary transition-colors duration-300">Learning</a>
       <a href="#testimonials" class="hover:text-brand-primary transition-colors duration-300">Reviews</a>
       <a href="#community" class="hover:text-brand-primary transition-colors duration-300">Community</a>
     </div>
-    <a href="#cta" class="hidden sm:inline-flex bg-brand-primary text-white text-base font-semibold px-5 py-3 rounded-[4.5px] hover:bg-brand-secondary transition-all duration-300 no-underline tracking-tight">
+    <a href="#cta" class="hidden sm:inline-flex bg-brand-primary text-white text-base font-semibold px-5 py-3 rounded-[4.5px] hover:bg-brand-secondary transition-all duration-300 no-underline tracking-tight font-display">
       Get in Touch
     </a>
-    <button class="md:hidden w-11 h-11 flex items-center justify-center text-brand-text" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <button class="md:hidden w-12 h-12 flex items-center justify-center text-brand-text" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><rect width="22" height="2" rx="1" fill="currentColor"/><rect y="7" width="22" height="2" rx="1" fill="currentColor"/><rect y="14" width="22" height="2" rx="1" fill="currentColor"/></svg>
     </button>
   </div>
-  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-3 mx-6 glass-nav rounded-2xl p-6 flex flex-col gap-4 text-base font-medium">
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-3 mx-6 glass-nav rounded-2xl p-6 flex flex-col gap-4 text-base font-medium font-display">
     <a href="#Learning" class="text-brand-text/70 hover:text-brand-primary">Learning</a>
     <a href="#testimonials" class="text-brand-text/70 hover:text-brand-primary">Reviews</a>
     <a href="#community" class="text-brand-text/70 hover:text-brand-primary">Community</a>
@@ -110,13 +112,13 @@
         </p>
 
         <h1 class="md:col-span-7 font-display font-bold text-brand-primary leading-[1.05] tracking-[-0.02em] max-w-5xl mb-8"
-            style="font-size: clamp(2.5rem, 5.5vw, 5.6rem);">
+            style="font-size: clamp(2.2rem, 3.8vw, 4.2rem);">
           <span data-hero-word style="font-weight: 800; opacity: 0;">Learn French,</span>
           <br>
           <span data-hero-word style="font-weight: 800; font-style: italic; color: #A7636D; opacity: 0;">Reimagined.</span>
         </h1>
 
-        <p class="md:col-span-4 font-body text-brand-text/70 text-xl md:text-xl max-w-xs md:max-w-none leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
+        <p class="md:col-span-5 font-body text-brand-text/70 text-xl md:text-xl max-w-xs md:max-w-none leading-relaxed mb-10" data-hero-subtitle style="opacity: 0;">
           An immersive and personalized experience, tailored to all ages and learning styles. Learn french through 1-2-1 tutoring and classes in Crewe & Nantwich.
         </p>
 
@@ -137,7 +139,7 @@
                  alt="Emma Bolland — French tutor"
                  class="w-full h-full object-cover object-top transition-transform duration-1000 ease-out group-hover:scale-105"
                  style="filter: contrast(1.05) saturate(0.95);"
-                 width="450" height="563" loading="eager">
+                 width="450" height="563" loading="eager" fetchpriority="high">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-primary/25 via-transparent to-transparent transition-all duration-700 group-hover:from-brand-primary/45"></div>
           </div>
           <div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full overflow-hidden shadow-xl -rotate-6 hidden lg:block cursor-pointer group"
@@ -253,7 +255,7 @@
 </section>
 
 <!-- ==================== L'Learning — Gapless Bento Grid ==================== -->
-<section id="Learning" class="relative my-32 md:my-48">
+<section id="Learning" class="relative py-32 md:py-48">
   <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
       <div>
@@ -275,7 +277,7 @@
       <div class="md:col-span-12 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer p-8 md:p-12 flex flex-col justify-between min-h-[200px]"
            data-gsap-card>
         <div>
-          <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">01</span>
+          <span class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase block mb-3">01</span>
           <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Visiting France</h3>
           <p class="font-body text-white/60 text-base leading-[1.7] max-w-[65ch]">
             Planning a trip to France? Learn what you need to make the most of your travels: from ordering at restaurants to navigating local culture with confidence.
@@ -289,7 +291,7 @@
       <div class="md:col-span-7 relative overflow-hidden rounded-2xl bg-brand-primary group cursor-pointer p-8 md:p-12 flex flex-col justify-between min-h-[340px]"
            data-gsap-card>
         <div>
-          <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">02</span>
+          <span class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase block mb-3">02</span>
           <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">GCSE, A-Level &amp; Degree </h3>
           <p class="font-body text-white/60 text-base leading-[1.7] max-w-[55ch]">
             For students studying French at GCSE, A-Level, or university - I provide a focused learning environment that supports and enhances the curriculum.
@@ -312,7 +314,7 @@
       <!-- Card 3: Little Adventures — col-span-5 -->
       <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">03</span>
+        <span class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase block mb-3">03</span>
         <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">Little Adventures</h3>
         <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-[45ch]">
           Children learning French can often find the classroom distracting. I provide a nurturing learning environment that supports your child's natural curiosity.
@@ -324,7 +326,7 @@
       <!-- Card 4: International Business — col-span-5 -->
       <div class="md:col-span-5 relative overflow-hidden rounded-2xl bg-brand-surface border border-black/[0.04] group p-8 flex flex-col min-h-[180px]"
            data-gsap-card>
-        <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3">04</span>
+        <span class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase block mb-3">04</span>
         <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2">International Business</h3>
         <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-[45ch]">
           Have clients in a French-speaking country? Looking to expand? Learn how to build rapport and navigate those new opportunities with fluency and cultural insight.
@@ -339,7 +341,7 @@
         <div class="absolute inset-0 opacity-[0.03] bg-cover bg-center"
              style="background-image: url('assets/bento_books.jpg'); filter: grayscale(1);"></div>
         <div>
-          <span class="font-body text-brand-accent/70 text-sm font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">05</span>
+          <span class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase block mb-3 relative z-10">05</span>
           <h3 class="font-display font-bold text-brand-primary text-3xl tracking-[-0.02em] mb-2 relative z-10">Beginners</h3>
           <p class="font-body text-brand-text/60 text-base leading-relaxed max-w-[55ch] relative z-10">
             Ready to start your French journey? We focus on the foundations of conversation before expanding your ideas. C'est parti!
@@ -353,7 +355,7 @@
 </section>
 
 <!-- ==================== LES RECOMMENDATIONS — Testimonial Carousel ==================== -->
-<section id="testimonials" class="relative my-32 md:my-48">
+<section id="testimonials" class="relative py-32 md:py-48">
   <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
     <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full opacity-[0.07]"
          style="background: radial-gradient(circle, rgba(167,99,109,1) 0%, transparent 70%);"></div>
@@ -505,7 +507,7 @@
           </div>
         </div>
         <div class="relative z-10 mt-auto p-8 md:p-10">
-          <p class="font-body text-brand-accent/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3">Featured Review</p>
+          <p class="font-body text-brand-accent text-sm font-semibold tracking-[0.2em] uppercase mb-3">Featured Review</p>
           <h3 class="font-display font-bold text-white text-3xl tracking-[-0.02em] mb-2">Jan</h3>
                      <p class="font-body text-white/60 text-base leading-[1.7] max-w-[45ch]">
             &ldquo;I've been having conversations with Emma for 3 years. I've enjoyed every moment of it.&rdquo;
@@ -561,7 +563,7 @@
 </section>
 
 <!-- ==================== L'AMITIE — Pinned Split Section ==================== -->
-<section id="community" class="relative my-32 md:my-48">
+<section id="community" class="relative py-32 md:py-48">
   <div class="w-full max-w-7xl mx-auto px-6 md:px-12">
     <div class="flex flex-col lg:flex-row gap-0" id="pinned-split-container">
       <!-- Left: Pinned on desktop, stacked on mobile -->
@@ -584,8 +586,8 @@
          
         <div class="bg-white rounded-2xl p-8 shadow-sm border border-black/[0.04]">
           <div class="relative overflow-hidden rounded-xl mb-6 aspect-[16/10] group">
-            <img src="assets/ebfrenchv2_logo.jpg"
-                 alt="French Meetup"
+            <img src="assets/community_classroom.jpg"
+                 alt="French tutoring session in progress"
                  class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                  style="filter: contrast(1.1) saturate(0.8);"
                  width="640" height="400" loading="lazy" decoding="async">
@@ -662,7 +664,7 @@
 </section>
 
 <!-- ==================== TALK FRENCH TO ME — CTA + Contact Form ==================== -->
-<section id="cta" class="relative my-32 md:my-48">
+<section id="cta" class="relative py-32 md:py-48">
   <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(167,99,109,0.1) 0%, transparent 70%);"></div>
   <div class="w-full max-w-6xl mx-auto px-6 md:px-12 relative z-10">
     <div class="grid md:grid-cols-12 gap-12 md:gap-20 items-start">

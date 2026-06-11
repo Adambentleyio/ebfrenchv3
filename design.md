@@ -33,7 +33,7 @@ All major sections use `py-32 md:py-48` (128px mobile, 192px desktop). Sections 
 | **Markup** | Vanilla HTML5 | No build step, instant deploys |
 | **Styling** | Tailwind CSS v3 (CDN) | Utility-first, custom tokens via `tailwind.config` |
 | **Motion** | GSAP 3.12 + ScrollTrigger (CDN) | Scroll-driven animations, pinning |
-| **Fonts** | Cabinet Grotesk (Fontshare) + Outfit (Google Fonts) | Display + body pairing, both CDN-hosted |
+| **Fonts** | Cabinet Grotesk (Fontshare) + Spectral (Google Fonts) | Display + body pairing, both CDN-hosted |
 | **Images** | Local only (`assets/`) | No external image CDNs in production |
 | **Forms** | Netlify Forms hook | `netlify` attribute on `<form>`, no backend |
 
@@ -70,8 +70,8 @@ All major sections use `py-32 md:py-48` (128px mobile, 192px desktop). Sections 
 <!-- Cabinet Grotesk -->
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,600,500,400,300&display=swap" rel="stylesheet">
 
-<!-- Outfit -->
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Spectral -->
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 ```
 
 ---
@@ -102,7 +102,7 @@ All major sections use `py-32 md:py-48` (128px mobile, 192px desktop). Sections 
 | Role | Font Family | Weights | Source |
 |---|---|---|---|
 | **Display** (h1, h2, h3, nav brand) | Cabinet Grotesk | 300, 400, 500, 600, 700, 800 | Fontshare CDN |
-| **Body** (p, span, a, input, label) | Outfit | 300, 400, 500, 600, 700 | Google Fonts |
+| **Body** (p, span, a, input, label) | Spectral | 400, 500, 600 | Google Fonts |
 
 **Tailwind config:**
 ```js
@@ -115,7 +115,7 @@ fontFamily: {
 **Usage:**
 - Headings: `class="font-display"` -- always bold (`font-bold`), tight tracking (`tracking-[-0.02em]`)
 - Body text: `class="font-body"` -- uses Outfit automatically as the default
-- Never use Cabinet Grotesk for body copy, never use Outfit for headings
+- Never use Cabinet Grotesk for body copy, never use Spectral for headings
 
 ### 3.3 Typography Scale
 

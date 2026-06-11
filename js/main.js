@@ -108,15 +108,18 @@ gsap.registerPlugin(ScrollTrigger);
     });
   });
 
+  dialog.addEventListener('close', () => {
+    iframe.contentWindow.postMessage('{"method":"pause"}', '*');
+    iframe.src = '';
+  });
+
   closeBtn.addEventListener('click', () => {
     dialog.close();
-    iframe.src = '';
   });
 
   dialog.addEventListener('click', (e) => {
     if (e.target === dialog) {
       dialog.close();
-      iframe.src = '';
     }
   });
 })();

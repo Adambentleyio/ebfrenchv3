@@ -9,7 +9,7 @@ Single-page static marketing site for a French tutoring business. Deploys via Ne
 - **HTML5** — vanilla, single `index.html` (shared CSS/JS extracted to `css/` and `js/`)
 - **Tailwind CSS v3** via CLI — custom tokens in `tailwind.config.js`, compiled to `css/styles.css`
 - **GSAP 3.12 + ScrollTrigger** via CDN — scroll animations, pinning, carousels
-- **Fonts** — Cabinet Grotesk (Fontshare CDN) for headings, Outfit (Google Fonts) for body
+- **Fonts** — Cabinet Grotesk (Fontshare CDN) for headings, Spectral (Google Fonts) for body
 
 ## Build & Deploy
 
